@@ -1,0 +1,96 @@
+---
+collateral:
+  - collateral-type: Stationery
+    description: Suite of digital & print applications of the new identity.
+    picture:
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+  - collateral-type: Packaging
+    description: Suite of packaging applications using the new identity.
+    picture:
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+  - collateral-type: e-Commerce
+    description: Suite of digital applications using the new identity.
+    picture:
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Identity | Brand Name Design System</title>
+<link rel="stylesheet" href="styles/gridlex.min.css">
+
+<!--Mobile Responsiveness-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Mobile Responsiveness-->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<!-- COLLATERAL -->
+
+  <section id="collateral">
+
+    <!-- Collateral Banner -->
+
+    <div class="flex-central-stack collateral">
+      <h3>
+        Collateral
+      </h3>
+      <a href="#collateral">
+        <img src="assets/accordian_sml_down.svg" alt="">
+      </a>
+    </div>
+
+    <!-- Collateral Title -->
+
+    <div class="grid padding5">
+
+      {% for item in page.collateral %}
+
+  <!-- COLLATERAL / STATIONERY SECTION -->
+
+      <div class="col-4">
+        <h3 class="color-blue">
+          {{item.collateral-type}}
+        </h3>
+        <hr class="hr-short">
+        <p>
+          {{item.description}}
+        </p>
+      </div>
+
+      <div class="align-right col-8">
+        {% for picture in item.picture %}
+        <img class="padding-bottom" src="{{picture.image_path}}" alt="{{picture.alt}}">
+
+        {% endfor %}
+
+      </div>
+
+      {% endfor %}
+
+    </div>

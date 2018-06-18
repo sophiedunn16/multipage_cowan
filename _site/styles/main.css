@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url("/assets/adam-krowitz-386852-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+}
+
+h1, h2, h3, h4, blockquote, a {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h2, h3, h4, blockquote, a {
+  font-weight: 300;
+}
+
+h2, blockquote {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #474747;
+}
+
+blockquote {
+  text-align: center;
+  padding: 5%;
+}
+
+footer {
+  box-shadow: #efefef 0px 0.5px 27px;
+  background-color: white;
+  text-align: center;
+  padding: 1.5%;
+}
+
+.text-bold-400 {
+  font-weight: 400;
+}
+
+.color-blue {
+  color: #7ab1e8;
+}
+
+.color-grey {
+  color: #474747;
+}
+
+.hr-long {
+  border-bottom: 0.1px solid #474747;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hr-short {
+  border-bottom: 1px solid #7AB1E8;
+  width: 40px;
+  margin-bottom: 40px;
+  }
+
+.padding5 {
+  padding: 5%;
+}
+
+.padding-bottom {
+  padding: 1%;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.color-tile-lge {
+  min-height: 15vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.color-tile-sml {
+  min-height: 10vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.colorgradient {
+  min-height: 20px;
+  border-radius: 9000px;
+  margin-bottom: 20px;
+}
+
+.navigation {
+  padding: 2%;
+  background-color: white;
+  box-shadow: #efefef 0px 0.5px 27px;
+}
+
+.navigation p {
+  font-family: 'Roboto Slab', serif;
+}
+
+.activetab {
+  color: #7ab1e8;
+}
+
+.identity, .visual-language, .collateral  {
+  background-color: #7ab1e8;
+  color: white;
+  padding: 3%;
+}
+
+.flex-central-stack {
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+/* Typography Specimen Styling */
+
+
+.large-type, .medium-type, .small-type {
+  font-family: 'Roboto Slab', serif;
+}
+
+.medium-type, .small-type, .xsmall-type {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+.large-type {
+  font-size: 3.75rem;
+  font-weight: 400;
+}
+
+.medium-type {
+  font-size: 3rem;
+}
+
+.small-type {
+  font-size: 2.5rem;
+}
+
+.xsmall-type {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+}
+
+.large-type-padding {
+  padding-bottom: 5.5rem;
+  margin-top: -20px;
+}
+.medium-type-padding {
+  padding-bottom: 4.5rem;
+}
+
+.small-type-padding {
+  padding-bottom: 4.5rem;
+}
+
+.xsmall-type-padding {
+  padding-bottom: 4rem;
+}
+
+.linebreak {
+  display: block;
+}
